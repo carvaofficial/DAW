@@ -1,0 +1,171 @@
+:root {
+    font-size: 12pt;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: coral;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav li:hover {
+    background-color: white;
+}
+
+nav li:hover a {
+    color: coral;
+}
+
+nav a {
+    color: white;
+}
+
+.doc-btn {
+    padding: 1rem;
+    color: white;
+}
+
+.doc-btn:hover {
+    color: coral;
+    background-color: white;
+}
+
+/******************************************/
+
+main {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+/* Title */
+
+.content h2 {
+    width: 100%;
+    padding: 3rem 0;
+    margin-bottom: 5rem;
+    background-color: #f4f4f4;
+    color: coral;
+    font-weight: bold;
+}
+
+/******************************************/
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: coral;
+    color: white;
+}
+
+/******************************************/
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+form .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form .input-form input {
+    margin: 0.5rem 0;
+    padding: 0.3rem 1rem;
+    border: 2px solid #00000050;
+    border-radius: 10rem;
+    font-size: 1rem;
+}
+
+form .input-form input:focus {
+    outline: none;
+    border: 2px solid coral;
+}
+
+form input[type="submit"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: coral;
+    color: white;
+}
+
+/******************************************/
+
+/* Form */
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: coral;
+    color: white;
+}
+
+td,
+th {
+    padding: 1rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 127, 80, 0.5);
+}
+
+/******************************************/
